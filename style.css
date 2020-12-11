@@ -1,16 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html,
-
-
 body {
-    background: url("img/bg-titular-md-01.jpg");
-    background-repeat: no-repeat;
+    min-height: 100%;
+    color: #fff;
     background-color:#ebf1de;
     font-style: 'Lato', sans-serif;
+    /*noten que color y background-color se repite en header#titular*/
+}
+header#titular {
+    min-height: 100vh;
 
+    min-height: 300px color: #000;
+    background-color: #ebf1de;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url("img/portada.png");
 }
 
+@media (min-width: 768px) {
+    header#titular {
+        background-image: url("img/portada.png");
+        /* Uso una imagen apaisada para pantallas más anchas*/
+    }
+}
+header#titular div.container {
+    height: 100vh; /*  Misma altura que el header */
+}
+
+header#titular h1 {
+    color:rgba(38,67,27,0.8); /* en caso quieran un texto blanco algo traslúcido */
+    font-family: 'Just Another Hand', cursive;
+    font-size: 60px;
+}
+
+header#titular h3 {
+    color:rgba(38,67,27,0.6); /* en caso quieran un texto blanco un poco más traslúcido que el título de primer nivel */
+  	font-family: 'Lato', sans-serif;
+}
+
+p{
+ color:#89995B;
+ 	font-family: 'Lato', sans-serif;
+
+}
 
 body::-webkit-scrollbar {
 	width: 0.4rem;
@@ -24,17 +60,6 @@ body::-webkit-scrollbar-thumb {
 	background-color: #a2b679;
 }
 
-header#titular {
-	height: 95vh;
-	min-height: 300px color: #000;
-	background-color: #ebf1de;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center top;
-	background-size: 100% auto;
-	b
-	/* Uso una imagen cuadrada para pantallas más angosta*/
-}
 
 img.ancho1 {
 	width: 80%;
@@ -83,33 +108,15 @@ a.deco-none {
 	text-decoration: none;
 }
 
-@media (min-width: 768px) {
-	header#titular {
-		background-image: url("img/bg-titular-sm-01.jpg");
-		/* Uso una imagen apaisada para pantallas más anchas*/
-	}
-}
 
-
-header#titular div.container {
-	height: 95vh;
-	/*  Misma altura que el header */
-}
-
-header#titular h1 {
-	color: #26431B;
+h1 {
 	font-family: 'Just Another Hand', cursive;
-	font-size: 48px;
+	color: #869959;
+  font-size: 230%;
 }
 
-header#titular h3 {
-	color: rgba(134, 153, 89, 0.6);
-	/* en caso quieran un texto blanco un poco más traslúcido que el título de primer nivel */
+h5,h6 {
 	font-family: 'Lato', sans-serif;
-}
-
-h2 {
-	font-family: 'Just Another Hand', cursive;
 	color: #869959;
 }
 

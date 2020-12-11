@@ -1,40 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 html,
 body {
-    min-height: 100%;
-    color: #fff;
-    background-color:#ebf1de;
-    font-style: 'Lato', sans-serif;
-    /*noten que color y background-color se repite en header#titular*/
-}
-header#titular {
-    min-height: 100vh;
+                min-height: 100%;
+                color: #fff;
+                background-color: #EBEFDE;
+                font-style: 'Lato', sans-serif;
+                /*noten que color y background-color se repite en header#titular*/
+            }
+            header#titular {
+                min-height: 100vh;
+                color: #fff;
+                background-color: #EBEFDE;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center top;
+                background-size: 100% auto;
+                background-image: url("img/portada-02.png");
+                /* Uso una imagen cuadrada para pantallas más angosta SM*/
+            }
 
-    min-height: 300px color: #000;
-    background-color: #ebf1de;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center top;
-    background-size: 100% auto;
-    background-image: url("img/portada.png");
-}
+            @media (min-width: 768px) {
+                header#titular {
+                    background-image: url("img/portada-01.png");
+                    /* Uso una imagen apaisada para pantallas más anchas MD*/
+                }
+            }
 
-@media (min-width: 768px) {
-    header#titular {
-        background-image: url("img/portada.png");
-        /* Uso una imagen apaisada para pantallas más anchas*/
-    }
-}
 header#titular div.container {
     height: 100vh; /*  Misma altura que el header */
 }
 
 header#titular h1 {
-    color:rgba(38,67,27,0.8); /* en caso quieran un texto blanco algo traslúcido */
+    color:rgba(38,67,27,0.9); /* en caso quieran un texto blanco algo traslúcido */
     font-family: 'Just Another Hand', cursive;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 header#titular h3 {

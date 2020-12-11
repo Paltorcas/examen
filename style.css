@@ -1,141 +1,128 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 html,
-                    body {
-                        min-height: 100%;
-                        color: #a2b679;
-                        font-family:'Lato', sans-serif;
-                        background-color: #ebf1de;
-                        /*noten que color y background-color se repite en header#titular*/
-                    }
 
 
-    body::-webkit-scrollbar {
-        width: 0.4rem;
-    }
+body {
+    background: url("img/bg-titular-md-01.jpg");
+    background-repeat: no-repeat;
+    background-color:#ebf1de;
+    font-style: 'Lato', sans-serif;
 
-    body::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    body::-webkit-scrollbar-thumb {
-        background-color: #a2b679;
-    }
-                    header#titular {
-                        height: 100vh;
-                        min-height: 500px
-                        color: #000;
-                        background-color: #ebf1de;
-                        background-repeat: no-repeat;
-                        background-attachment: scroll;
-                        background-position: center top;
-                        background-size: 100% auto;
-                        background-image: url("img/bg-titular-md-01.jpg");
-                        /* Uso una imagen cuadrada para pantallas más angosta*/
-                    }
-
-                    img.ancho1{
-                    	width: 80%;
-                    	background-size: cover;
-                    }
-                    img.ancho2{
-                    	width: 120%;
-                    	margin-left:-10%;
-                    	margin-top: 10%;
-                    }
-                    img.anchop{
-                    width: 60%;
-                     display: block;
-                     position: relative;
-                     top: 50%;
-                     left:50%;
-                     transform: translate(-50%, -50%);
-
-                    }
-
-                    img.codigo{
-                      width: 50%;
-                     display: block;
-                     position: relative;
-                     top: 50%;
-                     left:50%;
-                     transform: translate(-50%, -50%);
-
-                    }
-                    img.paises{
-                      width: 70%;
-                     display: block;
-                     position: relative;
-                     top: 50%;
-                     left:50%;
-                     transform: translate(-50%, -50%);
-
-                    }
-
-                    .gap100{
-                      padding: 70px 0px;
-                    }
-
-                    a.deco-none {
- color: inherit;
- text-decoration:none;
 }
 
 
-                    @media (min-width: 768px) {
-                        header#titular {
-                            background-image: url("img/bg-titular-sm-01.jpg");
+body::-webkit-scrollbar {
+	width: 0.4rem;
+}
 
-                            /* Uso una imagen apaisada para pantallas más anchas*/
-                        }
-                    }
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-                  @media (max-width: 1199.98px) {
-                        header#titular {
-                            background-image: url("img/bg-titular-md-01.jpg");
+body::-webkit-scrollbar-thumb {
+	background-color: #a2b679;
+}
 
-                            /* Uso una imagen apaisada para pantallas más anchas*/
-                        }
-                    }
+header#titular {
+	height: 95vh;
+	min-height: 300px color: #000;
+	background-color: #ebf1de;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center top;
+	background-size: 100% auto;
+	b
+	/* Uso una imagen cuadrada para pantallas más angosta*/
+}
+
+img.ancho1 {
+	width: 80%;
+	background-size: cover;
+}
+
+img.ancho2 {
+	width: 120%;
+	margin-left: -10%;
+	margin-top: 10%;
+}
+
+img.anchop {
+	width: 60%;
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+img.codigo {
+	width: 50%;
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+img.pais {
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 80%;
+	transform: translate(-30%, -50%);
+}
+
+.gap100 {
+	padding: 70px 0px;
+}
+
+a.deco-none {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	header#titular {
+		background-image: url("img/bg-titular-sm-01.jpg");
+		/* Uso una imagen apaisada para pantallas más anchas*/
+	}
+}
 
 
-                    header#titular div.container {
-                        height: 100vh; /*  Misma altura que el header */
-                    }
+header#titular div.container {
+	height: 95vh;
+	/*  Misma altura que el header */
+}
 
-                    header#titular h1 {
-                    color: #26431B;
-                    font-family: 'Just Another Hand',cursive;
-                    font-size: 55px;
+header#titular h1 {
+	color: #26431B;
+	font-family: 'Just Another Hand', cursive;
+	font-size: 48px;
+}
 
+header#titular h3 {
+	color: rgba(134, 153, 89, 0.6);
+	/* en caso quieran un texto blanco un poco más traslúcido que el título de primer nivel */
+	font-family: 'Lato', sans-serif;
+}
 
-                    }
-
-                    header#titular h2 {
-                        color:rgba(134,153,89,0.6); /* en caso quieran un texto blanco un poco más traslúcido que el título de primer nivel */
-                        font-family: 'Just Another Hand',cursive;
-                    }
-
-
-
-    h2, h4, h5 {
-    font-family:'Just Another Hand',cursive;
-    color: #869959;
-
-      }
+h2 {
+	font-family: 'Just Another Hand', cursive;
+	color: #869959;
+}
 
 footer {
-    background-color: #a2b679;
-    font-size:90%;
-    color: #EBF1DE;
+	background-color: #a2b679;
+	font-size: 90%;
+	color: #EBF1DE;
 }
 
-footer a{
-    color: #26431b;
+footer a {
+	color: #26431b;
 }
 
-footer a:hover{
-    color: #869959;
+footer a:hover {
+	color: #869959;
 }
